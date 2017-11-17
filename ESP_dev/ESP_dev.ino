@@ -56,7 +56,7 @@ void setup() {
   client.set_callback(callback);
   client.subscribe(subscribe_topic);
 
-  delay(500);
+  delay(250);
 }
 
 void loop() {

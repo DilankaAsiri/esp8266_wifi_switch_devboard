@@ -26,16 +26,11 @@ void wifi_init() {
   Serial.print("Connecting to ");
   Serial.println(WLAN_SSID);
 
-  //WiFi.begin(WLAN_SSID.c_str(),  WLAN_PASS.c_str());
-   //WiFi.begin("PROLINK_H5004NK_D55B9", "ghost512dcchoco");
-  //WiFi.begin("HTC_DESIRE", "ghost512");
-  //WiFi.begin("Android", "chamdm94");
   WiFi.begin(ssidcon, passcon);
   
   delay(50);
   Serial.println();
 
-  //Serial.println("WiFi connected");
   Serial.print("IP address: ");
   Serial.println(WiFi.localIP());
 }

@@ -15,16 +15,16 @@
 #include "MQTT_ESP.h"
 #include "switch_initialize.h"
 
-const char *ssidcon =  "wifi_ssid";  
-const char *passcon =  "wifi_password";   
+const char *ssidcon =  "IT Solutions";   // cannot be longer than 32 characters!
+const char *passcon =  "Oit$@12#";   //
 
 #define BUFFER_SIZE 100
 #define relay_pin     13
 #define wifi_status   16
 #define mqtt_status   14
 
-
-IPAddress mqtt_server(0, 0, 0, 0); // mqtt server ip
+//IPAddress mqtt_server(192, 168, 11, 2); //trace server
+IPAddress mqtt_server(172, 20, 249, 182);
 WiFiClient espClient;
 PubSubClient client(espClient);
 
